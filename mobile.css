@@ -1,0 +1,9 @@
+@media (max-width: 1350px) {
+    #hero {
+        grid-template-columns: 1fr;
+    }
+
+    #hero img {
+        display: none;
+    }
+}

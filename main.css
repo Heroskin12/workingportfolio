@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'calibre';
+    src: url('./CalibreRegular.otf') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'sfmono';
+    src: url('./SFMonoRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #ccd6f6;
+    --secondary-color: #8892b0;
+    --highlight-color: #52d4b9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ scroll-behavior:smooth }
+
+h1, h2 {
+    font-family: 'calibre';
+}
+
+h1, h2 {
+    font-size: calc(1rem + 3vw);
+    white-space: nowrap;
+}
+
+p {
+    font-size: calc(1rem + 0.2vw);
+    line-height: calc(1.4rem + 0.6vw);
+    font-family: 'sfmono'
+}
+
+span {
+    color: var(--highlight-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: calc(1rem + 0.3vw);
+}
+
+button {
+    font-size: calc(1rem + 0.3vw);
+    padding: 20px;
+    background: none;
+}
+
+.bg-dark {
+    background-color: #0a192f;
+}
+
+.primary-text {
+    color:var(--primary-color);
+}
+
+.secondary-text {
+    color: var(--secondary-color);
+}
+
+.highlight-text {
+    color: var(--highlight-color);
+}
+
+.btn-primary {
+    border: 1px solid var(--highlight-color);
+    color: var(--highlight-color);
+}
+
+.btn-secondary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+#hero {
+    min-height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 60px;
+    
+}
+
+#hero .info {
+    padding: 30px;
+    
+}
+
+#hero .info .text p:first-child, .text p:last-child {
+    margin-bottom: 20px;
+}
+
+#hero ul {
+    display: flex;
+}
+
+#hero ul li {
+    padding-right: 20px;
+    font-size: calc(1rem + 0.2vw);
+    color:var(--primary-color)
+}
+
+#hero .info button {
+    margin-top: 30px;
+}
+
+#hero img {
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+    justify-self: center;
+}
