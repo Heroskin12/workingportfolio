@@ -6,7 +6,10 @@
     .hamburger {
         justify-self: end;
         display: flex;
+    }
 
+    nav .logo img {
+        height: 40px;
     }
 
     /* .popup-menu {
@@ -18,14 +21,35 @@
     #hero, .about-wrapper {
         grid-template-columns: 1fr;
         justify-content: center;
-        border: 2px solid red;
+        padding: 0;
+    }
+
+    #hero .info {
+        padding: 0;
     }
 
     #hero img {
         display: none;
     }
 
+    h1, h2 {
+        font-size: calc(1rem + 3vw);
+    }
+
     .about-wrapper {
         margin-top: 20px;
     }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container .date {
+        margin-bottom: 10px;
+    }
+
+    .project-container .buttons {
+        flex-direction: column;
+    }
+    
 }
