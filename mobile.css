@@ -1,9 +1,31 @@
-@media (max-width: 1350px) {
-    #hero {
+@media (max-width: 950px) {
+    nav .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        justify-self: end;
+        display: flex;
+
+    }
+
+    /* .popup-menu {
+        display: flex;
+    } */
+}
+
+@media (max-width: 1600px) {
+    #hero, .about-wrapper {
         grid-template-columns: 1fr;
+        justify-content: center;
+        border: 2px solid red;
     }
 
     #hero img {
         display: none;
+    }
+
+    .about-wrapper {
+        margin-top: 20px;
     }
 }

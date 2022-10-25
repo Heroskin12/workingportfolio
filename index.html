@@ -11,8 +11,39 @@
     <title>Jamie</title>
 </head>
 <body class="bg-dark">
+
+    <!-- Navigation Bar -->
+    <nav id="nav">
+        <div class="nav-grid-container">
+            <div class="logo">
+                <img src="./WWWLogo.svg" alt="">
+            </div>
+            <div class="nav-links">
+                <ul class="menu-items">
+                    <li class="pointer feature-text"><a href="#about" class="page-link"><span class="highlight">01.</span> About</a></li>
+                    <li class="pointer feature-text"><a href="#project" class="page-link"><span class="highlight">02.</span> Projects</a></li>
+                    <li class="pointer feature-text"><a href="#contact" class="page-link"><span class="highlight">03.</span> Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger pointer">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <div class="popup-menu">
+                <div class="exit">X</div>
+                <ul>
+                    <li class="pointer feature-text"><a href="#about" class="page-link"><span class="highlight">01.</span> About</a></li>
+                    <li class="pointer feature-text"><a href="#project" class="page-link"><span class="highlight">02.</span> Projects</a></li>
+                    <li class="pointer feature-text"><a href="#contact" class="page-link"><span class="highlight">03.</span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body: Split into 4 sections. -->
     <main>
-        <div id="hero">
+        <section id="hero">
             <div class="info">
                 <div class="text">
                     <p class="highlight-text">Hi, my name is</p>
@@ -22,16 +53,33 @@
                 </div>
                 <div class="social">
                     <ul>
-                        <li><a>Projects</a></li>
-                        <li><a>Resume</a></li>
-                        <li><a>Github</a></li>
-                        <li><a>Linkedin</a></li>
+                        <li class="pointer"><a>Projects</a></li>
+                        <li class="pointer"><a>Resume</a></li>
+                        <li class="pointer"><a>Github</a></li>
+                        <li class="pointer"><a>Linkedin</a></li>
                     </ul>
                 </div>
-                <button type="button" class="btn-primary"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jamiefurlong'});return false;"></a> Schedule a Call</button>
+                <button type="button" class="btn-primary pointer"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jamiefurlong'});return false;">Schedule a Call</a></button>
             </div>
             <img src="./me.jpg" alt="">
-        </div>
+        </section>
+        
+        <p class="line"><span> ---------------- </span> 01. About</p>
+
+        <section id="about">
+            <div class="about-wrapper p3">
+                <div class="about-text">
+                    <p class="p3">Hi. My name is Jamie and I am an aspiring frontend web developer from Wales. Over the past 4 years, I have put my Modern Languages degree to good use by living and working as an English, French and Spanish teacher in Vietnam. But a funny thing happened. I was thinking about what's next for me; whether I would return to the UK and what I could do there. So, I started to seriously explore my interests. </p>
+                        
+                    <p class="p3">Interested in journalism, I created a documentary about the lunar new year celebration in Vietnam, Eating Tet. Before that, I had never picked up a camera. Then, I explored careers in TV production but realised it wasn't for me. And then, I started taking CS50, a computer science course run by Harvard University on Edx. When I woke up at 3am excited because a solution for my blur photo filter in C came to me, I realised I had found a passion. </p>
+    
+                    <p class="p3">Fast-forward to now, and I've completed CS50, countless Udemy and Youtube courses, I've finished the majority of the Odin Project and I volunteer as a Python teacher. Now, I am laser focused on achieving my first entry position into the world of web development. It's a little daunting and intimidating switching careers with no formal education background in Computer Science. However, I strongly believe the soft skills achieved through my career and experiences so far, as well as the projects I've highlighted below, emphasise that I am ready and able to apply myself well in this career. </p>
+                        
+                    <p class="p3">They say that learning a foreign language is like training your brain to be more like a computer. And development is just the opposite; training the computer to be more like my brain.</p>                   
+                </div>    
+                <img src="./me.jpg" alt="">        
+            </div>
+        </section>
     </main>
     
         
