@@ -18,6 +18,8 @@
     --secondary-color: #8892b0;
     --highlight-color: #52d4b9;
     --background-color: #0a192f;
+    --feature-font: 'calibre';
+    --text-font: 'sfmono';
 }
 
 /* Default Configuration */
@@ -31,14 +33,19 @@
 html{ scroll-behavior:smooth }
 
 h1, h2 {
-    font-family: 'calibre';
+    font-family: var(--feature-font);
     font-size: calc(1rem + 3vw);
+}
+
+h3 {
+    font-family: var(--feature-font);
+    font-size: calc(1rem + 1.5vw);
 }
 
 p, li {
     font-size: calc(1rem + 0.1vw);
     line-height: calc(1.4rem + 0.6vw);
-    font-family: 'sfmono'
+    font-family: var(--text-font);
 }
 
 span {
@@ -52,7 +59,6 @@ ul {
 a {
     text-decoration: none;
     font-size: calc(1rem + 0.3vw);
-    font-family: 'calibre';
     color: unset;
 }
 
@@ -317,3 +323,156 @@ nav ul li a {
 .project-container .buttons a {
     font-family: 'sfmono';
 }
+
+/* Other Projects Section */
+#otherprojects {
+    min-height: 90vh;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+#otherprojects h1 {
+    text-align: center;
+}
+
+#otherprojects .refit-project-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 60px;
+}
+
+#otherprojects .otherproject-container {
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#otherprojects .otherproject-container h3 {
+    color: var(--primary-color);
+}
+
+#otherprojects .project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* For Background Images */
+.project-1 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/calculator.png') no-repeat center center/cover;
+}
+
+.project-2 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/credit.png') no-repeat center center/cover;
+}
+
+.project-3 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/admin.png') no-repeat center center/cover;
+}
+
+.project-4 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/library.png') no-repeat center center/cover;
+}
+
+.project-5 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/rock.png') no-repeat center center/cover;
+}
+
+.project-6 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/mario.png') no-repeat center center/cover;
+}
+
+.project-7 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .7),  rgba(10, 25, 47, .7)), url('./images/reading.png') no-repeat center center/cover;
+}
+
+/* Contact */
+#contact {
+    min-height: 90vh;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 100px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding-top: 50px;       
+    gap: 60px;
+}
+
+form input, form textarea {
+    padding: 20px 15px;
+    border: 1px solid var(--highlight-color);
+    outline: none;    
+    background: none;
+    color: var(--secondary-color);
+    width: 100%;
+    font-size: 18px;
+}
+
+form div:nth-child(2), form div:nth-child(3) {
+    margin-top: 20px;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+ form button i {
+    padding-left: 10px;
+ }
+
+.contact-info i {
+    color: var(--highlight-color);
+    font-size: 50px;
+    padding: 20px 0;
+    padding-right: 30px;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text a {
+    margin-top: 10px;
+    font-family: var(--text-font);
+}
+
+.mini-line {
+    transform: rotate(90deg);
+}
+
