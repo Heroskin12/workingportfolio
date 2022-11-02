@@ -14,6 +14,7 @@
 
     <!-- Navigation Bar -->
     <nav id="nav">
+
         <div class="nav-grid-container">
             <div class="logo">
                 <img src="./images/WWWLogo.svg" alt="">
@@ -25,18 +26,22 @@
                     <li class="pointer feature-text"><a href="#contact" class="page-link"><span class="highlight">03.</span> Contact</a></li>
                 </ul>
             </div>
-            <div class="hamburger pointer">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </div>
-            <div class="popup-menu">
-                <div class="exit">X</div>
-                <ul>
-                    <li class="pointer feature-text"><a href="#about" class="page-link"><span class="highlight">01.</span> About</a></li>
-                    <li class="pointer feature-text"><a href="#project" class="page-link"><span class="highlight">02.</span> Projects</a></li>
-                    <li class="pointer feature-text"><a href="#contact" class="page-link"><span class="highlight">03.</span> Contact</a></li>
-                </ul>
+        </div>
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="./documents/CV.pdf" download>Download my Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -54,7 +59,7 @@
                 <div class="social">
                     <ul>
                         <li class="pointer"><a>Projects</a></li>
-                        <li class="pointer"><a>Resume</a></li>
+                        <li class="pointer"><a href="./documents/CV.pdf" download>Resume</a></li>
                         <li class="pointer"><a>Github</a></li>
                         <li class="pointer"><a>LinkedIn</a></li>
                     </ul>
@@ -198,7 +203,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="#">
+                    <form action="mailto:jamiefurlong16@gmail.com" method="post" enctype="text/plain">
                         <div class="input-name input">
                             <input type="text" name="name" id="name" required placeholder="What is your name? *">
                         </div>

@@ -48,18 +48,14 @@
         display: none;
     }
 
-    .hamburger {
-        justify-self: end;
-        display: flex;
+    .menu-wrap {
+        display: block;
     }
+
 
     nav .logo img {
         height: 40px;
     }
-
-    /* .popup-menu {
-        display: flex;
-    } */
 
     #otherprojects h1 {
         margin-bottom: 50px;
