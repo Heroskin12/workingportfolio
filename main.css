@@ -102,6 +102,19 @@ button {
     color: var(--primary-color);
 }
 
+.key {
+    color: var(--highlight-color);
+    font-size: calc(1rem + 0.1vw);
+    line-height: calc(1.4rem + 0.6vw);
+    font-family: var(--text-font);
+    border-bottom: 1px solid var(--highlight-color);
+}
+
+.key:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
 /* Styling for Nav Bar */
 nav {
     padding: 20px 50px;
