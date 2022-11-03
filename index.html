@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./mobile.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('41Se6CdPMr8677OpG');
+        })();
+    </script>
+    
     <title>Jamie</title>
 </head>
 <body class="bg-dark">
@@ -203,15 +211,16 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="mailto:jamiefurlong16@gmail.com" method="post" enctype="text/plain">
+                    <form method="post" enctype="text/plain" id="contact_form">
+                        
                         <div class="input-name input">
-                            <input type="text" name="name" id="name" required placeholder="What is your name? *">
+                            <input type="text" name="user_name" id="name" required placeholder="What is your name? *">
                         </div>
                         <div class="input input-email">
-                            <input type="email" name="email" id="email" required placeholder="What is your email? *">
+                            <input type="email" name="user_email" id="email" required placeholder="What is your email? *">
                         </div>
                         <div class="input input-query">
-                            <textarea name="query" id="query" cols="30" rows="5" required placeholder="What do you want to talk about? *"></textarea>
+                            <textarea name="message" id="query" cols="30" rows="5" required placeholder="What do you want to talk about? *"></textarea>
                         </div>
     
                         <button type="Submit" class="btn-primary">Send <i class="fa-solid fa-paper-plane"></i></button>
@@ -229,8 +238,7 @@
             <p class="highlight-text mini-line">--------</p>
         </section>
     </main>
-    
-        
+    <script src="./main.js"></script>
     <script src="https://kit.fontawesome.com/5ed879b221.js" crossorigin="anonymous"></script>     
 </body>
 </html>
