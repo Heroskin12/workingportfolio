@@ -67,6 +67,12 @@ button {
     padding: 20px;
     background: none;
     font-family: 'sfmono';
+    cursor: pointer;
+}
+
+.contact-info i:hover {
+    color: var(--primary-color);
+    transition: color .5s;
 }
 
 /* Utility Classes */
@@ -97,9 +103,21 @@ button {
     font-family: 'sfmono'
 }
 
+.btn-primary:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all .25s;
+}
+
 .btn-secondary {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
+    transition: all .25s;
+}
+
+.btn-secondary:hover {
+    border-color: var(--highlight-color);
+    color: var(--highlight-color);
 }
 
 .key {
@@ -144,13 +162,33 @@ nav ul {
 nav ul li {
     display: flex;
     padding: 0 20px;
-    white-space: nowrap;    
+    white-space: nowrap;  
+    flex-direction: column;  
+    position: relative;
 }
 
 nav ul li a {
     color: var(--primary-color);
     font-family: 'sfmono';
     font-size: calc(1rem + 0.1vw);
+}
+
+nav ul li:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 20px;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background: var(--highlight-color);
+}
+
+nav ul li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* Styling for Hero Section */
@@ -194,6 +232,12 @@ nav ul li a {
     border-bottom: 1px solid var(--primary-color);
 }
 
+#hero ul li:hover {
+    border-color: var(--highlight-color);
+    color: var(--secondary-color);
+    transition: all .25s;
+}
+
 
 #hero .info button {
     margin-top: 30px;
@@ -201,6 +245,11 @@ nav ul li a {
 
 #hero .info button a {
     color: var(--highlight-color);
+}
+
+#hero .info button a:hover {
+    color: var(--primary-color);
+    transition: color .25s;
 }
 
 #hero img {
