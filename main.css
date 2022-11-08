@@ -313,10 +313,14 @@ nav ul li:hover:after {
 }
 
 .project-container-2 {
-    background: linear-gradient(0deg, rgba(10, 25, 47, .9),  rgba(10, 25, 47, .9)), url('./images/tictactoe.png') no-repeat center center/cover;
+    background: linear-gradient(0deg, rgba(10, 25, 47, .9),  rgba(10, 25, 47, .9)), url('./images/media.png') no-repeat center center/cover;
 }
 
 .project-container-3 {
+    background: linear-gradient(0deg, rgba(10, 25, 47, .9),  rgba(10, 25, 47, .9)), url('./images/tictactoe.png') no-repeat center center/cover;
+}
+
+.project-container-4 {
     background: linear-gradient(0deg, rgba(10, 25, 47, .9),  rgba(10, 25, 47, .9)), url('./images/etch.png') no-repeat center center/cover;
 }
 
