@@ -191,6 +191,15 @@ nav ul li:hover:after {
     transform-origin: bottom left;
 }
 
+.nav-button {
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.nav-button a {
+    font-size: 1.3rem;
+}
+
 /* Styling for Hero Section */
 
 #hero {
