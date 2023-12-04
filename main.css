@@ -671,3 +671,10 @@ form button {
     justify-content: center;
     align-items: center;
 }
+
+/* Fix Hero issue on mobile */
+@media screen and (max-width: 992px) {
+    #hero ul li a {
+    display: none;
+  }
+}
