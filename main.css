@@ -267,6 +267,34 @@ nav ul li:hover:after {
     margin-left: 10px;
 }
 
+/* My Story Section */
+#story {
+    margin-bottom: 100px;
+}
+section .career-change {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-change h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.career-change div button {
+    margin-top: 30px;
+}
+
+.career-change button a {
+    color: var(--highlight-color);
+}
+
+.career-change button a:hover {
+    color: var(--primary-color);
+    transition: color .25s;
+}
 /* About Section */
 .line {
     color: var(--primary-color)
